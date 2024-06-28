@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap");
 @font-face {
     font-family: milky;
-    src: url('../font/Wobbles-9odZ.ttf');
+    src: url("../font/Wobbles-9odZ.ttf");
 }
-
 
 :root {
     --theme: #051540;
@@ -29,17 +28,19 @@
 
 html,
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
-   max-width: 1250px;
-   margin: 0 auto;
-    background-color: #0858FE;
-    scroll-behavior: smooth;
+    margin: 0 auto;
+    background-color: #0858fe;
+    /* scroll-behavior: smooth; */
 }
 
+body {
+    overflow-x: hidden;
+}
 h1,
 h2 {
-    font-family: 'milky', sans-serif;
+    font-family: "milky", sans-serif;
 }
 
 .bg-primary {
@@ -133,7 +134,7 @@ h2 {
 }
 
 .hero-text svg text {
-    font-family: 'milky', sans-serif;
+    font-family: "milky", sans-serif;
     text-transform: uppercase;
     animation: stroke 4s;
     stroke-width: 1.2;
@@ -147,10 +148,14 @@ h2 {
 
 .section-hero::before,
 .hero-image::before {
-    content: '';
+    content: "";
     position: absolute;
     border-radius: 50%;
-    background: linear-gradient( 260deg, var(--primary) 0%, rgba(115, 67, 210, 0) 100%);
+    background: linear-gradient(
+        260deg,
+        var(--primary) 0%,
+        rgba(115, 67, 210, 0) 100%
+    );
     -webkit-filter: blur(150px);
     filter: blur(150px);
 }
@@ -168,7 +173,11 @@ h2 {
 }
 
 .hero-image:before {
-    background: linear-gradient(260deg, #8bc34a00 0%, rgba(115, 67, 210, 0) 100%);
+    background: linear-gradient(
+        260deg,
+        #8bc34a00 0%,
+        rgba(115, 67, 210, 0) 100%
+    );
     bottom: 0;
     left: 0;
     width: 120%;
@@ -180,10 +189,14 @@ h2 {
 }
 
 .section-case::before {
-    content: '';
+    content: "";
     position: absolute;
     border-radius: 50%;
-    background: linear-gradient( 260deg, var(--secondary) 0%, rgba(115, 67, 210, 0) 100%);
+    background: linear-gradient(
+        260deg,
+        var(--secondary) 0%,
+        rgba(115, 67, 210, 0) 100%
+    );
     -webkit-filter: blur(150px);
     filter: blur(150px);
     width: 100%;
@@ -196,10 +209,14 @@ h2 {
 }
 
 .section-resume::before {
-    content: '';
+    content: "";
     position: absolute;
     border-radius: 50%;
-    background: linear-gradient( 260deg, var(--primary) 0%, rgba(115, 67, 210, 0) 100%);
+    background: linear-gradient(
+        260deg,
+        var(--primary) 0%,
+        rgba(115, 67, 210, 0) 100%
+    );
     -webkit-filter: blur(150px);
     filter: blur(150px);
     width: 90%;
